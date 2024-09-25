@@ -1,8 +1,7 @@
 import React from 'react';
 
 
-const PriceDetails = ({priceDetails}) => {
-    console.log(priceDetails)
+const PriceDetails = ({priceDetails,handlePlaceOrder}) => {
     const { totalMRP, couponDiscount, platformFee, shippingCharges, totalAmount }=priceDetails;
   return (
     <div className="card p-4 mb-3">
@@ -28,7 +27,14 @@ const PriceDetails = ({priceDetails}) => {
         <strong>Total Amount</strong>
         <strong>₹{Math.round(totalAmount)}</strong>
       </div>
-      <button className="btn btn-secondary btn-block w-50 mx-auto p-2 fs-5">Place Order</button>
+      <button 
+  type="button" 
+  className="btn btn-secondary btn-block w-50 mx-auto p-2 fs-5" 
+  onClick={handlePlaceOrder}
+>
+  Place Order
+</button>
+
     </div>
   );
 };

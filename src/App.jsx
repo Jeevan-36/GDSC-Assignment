@@ -53,6 +53,19 @@ function App() {
       }
       setPriceDetails(newPriceDetails)
   }
+  const handlePlaceOrder=()=>{
+    alert("Order Placed Successfully");
+    setCartList([]);
+    setPriceDetails({
+      totalMRP:0,
+      couponDiscount:10,
+      platformFee:50,
+      shippingCharges:57,
+      totalAmount:0
+      });
+      }
+      
+  
   
 
   return (
@@ -62,7 +75,7 @@ function App() {
       handleAddToCart={handleAddToCart}></Products>
       <CartItems cartList={cartList} handleCartItemDelete={handleCartItemDelete} ></CartItems>
       {
-        cartList.length!==0&&<PriceDetails priceDetails={priceDetails}></PriceDetails>
+      cartList.length!==0&&<PriceDetails priceDetails={priceDetails} handlePlaceOrder={handlePlaceOrder}></PriceDetails>
       }
       
     </div>

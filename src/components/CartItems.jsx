@@ -4,7 +4,7 @@ function CartItems({cartList,handleCartItemDelete}) {
   return (
     <><div className="alert alert-secondary text-center">
           {cartList.length !== 0 ?
-              <p>Card Items</p> :
+              <p>Cart Items</p> :
               <p>Cart is Empty</p>}
       </div><div className="bg-dark mt-5 p-3 d-flex justify-content-evenly flex-wrap">
 
