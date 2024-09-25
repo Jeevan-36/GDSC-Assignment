@@ -91,7 +91,3 @@ gdsc-assignment/
 ### Responsive Check-3
 ![Responsive Check](./screenshots/Responsivecheck-3.png)
 
-## Demo Video
-
-![Demo Video](./videos/E%20commerce%20-%20Google%20Chrome%202024-09-25%2007-32-24.mp4)
-
